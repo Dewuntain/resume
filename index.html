@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дырков Игорь — CV / ML Engineer</title>
+  <meta name="description" content="Портфолио инженера-программиста: компьютерное зрение, ML, промышленная автоматизация.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ============ ШАПКА ============ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">
+        <span class="nav-brand-dot"></span>
+        Дырков Игорь
+      </a>
+      <nav class="nav-links">
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Опыт работы</a>
+        <a href="#entrepreneur">Предпринимательство</a>
+        <a href="#skills">Навыки</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="hero">
+    <h1>Дырков Игорь</h1>
+    <p class="subtitle">Software Engineer · Computer Vision · ML</p>
+    <p class="tagline">
+        Разрабатываю и внедряю системы компьютерного зрения и ML полного цикла для
+        промышленности: от прототипа до работающего продукта. 6+ внедрённых решений, 500+
+        пользователей.
+    </p>
+    <div class="hero-contacts">
+      <a href="mailto:dewuntain@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://t.me/dewuntain" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> Telegram</a>
+    </div>
+  </section>
+
+  <!-- ============ ОБО МНЕ ============ -->
+  <section id="about" class="section">
+    <h2>Обо мне</h2>
+    <p class="lead">
+      Инженер-программист с опытом проектирования, разработки и внедрения
+      программных решений полного цикла для промышленной автоматизации,
+      компьютерного зрения и обработки данных. Разработал и внедрил
+      6+ внутренних продуктов, используемых сотрудниками и организациями-партнёрами.
+    </p>
+    <div class="stats">
+      <div class="stat"><span class="metric">98,6%</span><p>точность CV-системы</p></div>
+      <div class="stat"><span class="metric">660 тыс. ₽</span><p>экономия в год</p></div>
+      <div class="stat"><span class="metric">500+</span><p>пользователей</p></div>
+      <div class="stat"><span class="metric">6+</span><p>внедрённых продуктов</p></div>
+    </div>
+  </section>
+
+  <!-- ============ ОПЫТ РАБОТЫ ============ -->
+  <section id="projects" class="section">
+    <h2>Опыт работы</h2>
+
+    <div class="experience-group">
+      <div class="experience-head">
+        <h3>ЗАО «Муром» · Инженер-программист</h3>
+        <p class="experience-dates">Июль 2024 — Сентябрь 2026</p>
+      </div>
+
+      <!-- ---------- ПРОЕКТ 1 ---------- -->
+      <article class="project">
+        <div class="project-head">
+          <h4>Система компьютерного зрения для подсчёта и измерения объектов на конвейере</h4>
+        </div>
+        <div class="project-body">
+          <div class="project-media">
+            <img src="images/conveyor-counting.gif" alt="Система компьютерного зрения для подсчёта и измерения объектов на конвейере">
+          </div>
+          <div class="project-side">
+            <div class="tabs" role="tablist">
+              <button class="tab is-active" data-tab="task">Задача</button>
+              <button class="tab" data-tab="limits">Ограничения</button>
+              <button class="tab" data-tab="solution">Решение</button>
+              <button class="tab" data-tab="contribution">Результат</button>
+            </div>
+            <div class="project-content">
+              <div class="tab-panel is-active" data-panel="task">
+                <h5>Задача</h5>
+                <ul>
+                  <li>Реализовать систему для подсчёта и измерения размеров объектов на конвейере в реальном времени.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="limits">
+                <h5>Ограничения</h5>
+                <ul>
+                  <li>Размещение и параметры камеры не известны заранее.</li>
+                  <li>Наличие засветов на видеопотоке.</li>
+                  <li>Возможные перебои с доступом к общей БД.</li>
+                  <li>Искажённая перспектива получаемого видеопотока.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="solution">
+                <h5>Решение</h5>
+                <ul>
+                  <li>Реализация сохранения результатов в локальной БД при перебоях с доступом к общей БД и перенос после восстановления.</li>
+                  <li>Реализация таблицы масштабов для определения размеров объектов с учётом искажённой перспективы видеопотока.</li>
+                  <li>Определение пороговых значений для исключения влияния засветов.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="contribution">
+                <h5>Результат</h5>
+                <ul>
+                  <li>Перевод учёта с ежеквартального на учёт в реальном времени.</li>
+                  <li>Обеспечение <b class="metric">точности 98,6%</b> при сравнении с реальными размерами объектов.</li>
+                  <li>Система оповещений при перебоях с доступом к общей БД и отсутствии видеопотока.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ---------- ПРОЕКТ 2 ---------- -->
+      <article class="project">
+        <div class="project-head">
+          <h4>Распознавание QR-кодов на конвейере</h4>
+        </div>
+        <div class="project-body">
+          <div class="project-media">
+            <img src="images/qr-scanning.gif" alt="Распознавание QR-кодов на конвейере">
+          </div>
+          <div class="project-side">
+            <div class="tabs" role="tablist">
+              <button class="tab is-active" data-tab="task">Задача</button>
+              <button class="tab" data-tab="limits">Ограничения</button>
+              <button class="tab" data-tab="solution">Решение</button>
+              <button class="tab" data-tab="contribution">Результат</button>
+            </div>
+            <div class="project-content">
+              <div class="tab-panel is-active" data-panel="task">
+                <h5>Задача</h5>
+                <ul>
+                  <li>Заменить устаревшее коммерческое ПО для распознавания QR-кодов на конвейере.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="limits">
+                <h5>Ограничения</h5>
+                <ul>
+                  <li>Маркировка может быть смазана, перекрыта упаковочной лентой или нечитаема.</li>
+                  <li>Изменение степени освещения в зависимости от времени суток.</li>
+                  <li>Движение посторонних объектов на линии.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="solution">
+                <h5>Решение</h5>
+                <ul>
+                  <li>Реализация автоматического сканирования в потоке без остановки линии.</li>
+                  <li>Реализация логики уведомления оператора при нечитаемой маркировке.</li>
+                  <li>Реализация системы связи с конвейером.</li>
+                  <li>Реализация сохранения изображений с повреждёнными этикетками для дальнейшей отчётности.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="contribution">
+                <h5>Результат</h5>
+                <ul>
+                  <li>Замена устаревшего платного ПО.</li>
+                  <li>Перевод сканирования с ручного на автоматическое.</li>
+                  <li>Уведомление оператора при нечитаемой маркировке.</li>
+                  <li>Отсутствие обращений со склада о невозможности распознавания QR-кодов.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ---------- ПРОЕКТ 3 ---------- -->
+      <article class="project">
+        <div class="project-head">
+          <h4>Внутренний сервис транскрибации, OCR и анонимизации</h4>
+        </div>
+        <div class="project-body">
+          <div class="project-media">
+            <img src="images/transcription.png" alt="Внутренний сервис транскрибации, OCR и анонимизации">
+          </div>
+          <div class="project-side">
+            <div class="tabs" role="tablist">
+              <button class="tab is-active" data-tab="task">Задача</button>
+              <button class="tab" data-tab="limits">Ограничения</button>
+              <button class="tab" data-tab="solution">Решение</button>
+              <button class="tab" data-tab="contribution">Результат</button>
+            </div>
+            <div class="project-content">
+              <div class="tab-panel is-active" data-panel="task">
+                <h5>Задача</h5>
+                <ul>
+                  <li>Заменить платные сервисы транскрибации, OCR и анонимизации внутренним решением.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="limits">
+                <h5>Ограничения</h5>
+                <ul>
+                  <li>Данные не должны покидать контур компании.</li>
+                  <li>CPU — единственный вычислительный компонент.</li>
+                  <li>Разделение спикеров при транскрибации.</li>
+                  <li>Разнородные форматы аудио, видео и документов.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="solution">
+                <h5>Решение</h5>
+                <ul>
+                  <li>Сборка пайплайна на WhisperX + pyannote для транскрибации и разделения спикеров.</li>
+                  <li>Реализация системы очереди для последовательного выполнения в условиях ограниченных ресурсов.</li>
+                  <li>Реализация системы восстановления очереди при перезагрузке сервера.</li>
+                  <li>Реализация правил и перечня аббревиатур для анонимизации.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="contribution">
+                <h5>Результат</h5>
+                <ul>
+                  <li>Полный отказ от платных сервисов — экономия до <b class="metric">300 тыс. ₽/год</b>.</li>
+                  <li>Сервисом пользуются <b class="metric">200+ сотрудников</b>.</li>
+                  <li>Данные не покидают контур, без ограничений на размер и длительность.</li>
+                  <li>API для использования с другими приложениями.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ---------- ПРОЕКТ 4 ---------- -->
+      <article class="project">
+        <div class="project-head">
+          <h4>Поиск по документам с векторной индексацией</h4>
+        </div>
+        <div class="project-body">
+          <div class="project-media">
+            <img src="images/rag-search.png" alt="Поиск по документам с векторной индексацией">
+          </div>
+          <div class="project-side">
+            <div class="tabs" role="tablist">
+              <button class="tab is-active" data-tab="task">Задача</button>
+              <button class="tab" data-tab="limits">Ограничения</button>
+              <button class="tab" data-tab="solution">Решение</button>
+              <button class="tab" data-tab="contribution">Результат</button>
+            </div>
+            <div class="project-content">
+              <div class="tab-panel is-active" data-panel="task">
+                <h5>Задача</h5>
+                <ul>
+                  <li>Реализовать чат для получения ответов с информацией из внутренних документов.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="limits">
+                <h5>Ограничения</h5>
+                <ul>
+                  <li>Запрет на использование внешних LLM и облачных индексов.</li>
+                  <li>CPU — единственный вычислительный компонент.</li>
+                  <li>Нет единого формата оформления документов.</li>
+                  <li>Обязательное использование n8n для реализации пайплайнов.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="solution">
+                <h5>Решение</h5>
+                <ul>
+                  <li>Развёртывание локальной LLM и Qdrant для векторной индексации.</li>
+                  <li>Реализация приложения для локального хранения документов, эмбеддингов и разбиения на чанки.</li>
+                  <li>Реализация системы очистки документов перед индексацией.</li>
+                  <li>Реализация пайплайна индексации и обновления документов через n8n.</li>
+                  <li>Реализация пайплайна поиска информации и выдачи ответов через n8n.</li>
+                  <li>Реализация веб-интерфейса поиска на FastAPI.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="contribution">
+                <h5>Результат</h5>
+                <ul>
+                  <li>Данные не покидают контур компании.</li>
+                  <li>Время поиска сократилось с <b class="metric">30 до 2 минут</b>.</li>
+                  <li>Поток обращений в отдел документации <b class="metric">−40%</b>.</li>
+                  <li>Документы автоматически индексируются и обновляются при загрузке в хранилище.</li>
+                  <li>API для использования с другими приложениями.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ---------- ПРОЕКТ 5 ---------- -->
+      <article class="project">
+        <div class="project-head">
+          <h4>Измерение лесоматериалов по маркерам</h4>
+        </div>
+        <div class="project-body">
+          <div class="project-media">
+            <img src="images/timber-measure.gif" alt="Измерение лесоматериалов по маркерам">
+          </div>
+          <div class="project-side">
+            <div class="tabs" role="tablist">
+              <button class="tab is-active" data-tab="task">Задача</button>
+              <button class="tab" data-tab="limits">Ограничения</button>
+              <button class="tab" data-tab="solution">Решение</button>
+              <button class="tab" data-tab="contribution">Результат</button>
+            </div>
+            <div class="project-content">
+              <div class="tab-panel is-active" data-panel="task">
+                <h5>Задача</h5>
+                <ul>
+                  <li>Заменить подписочное ПО для разметки и измерения лесоматериалов по маркерам.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="limits">
+                <h5>Ограничения</h5>
+                <ul>
+                  <li>Приложение должно быть исполняемым файлом.</li>
+                  <li>Нужно восстановить весь существующий функционал без доступа к нему.</li>
+                  <li>Автоматическое нахождение маркеров в разных условиях освещения.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="solution">
+                <h5>Решение</h5>
+                <ul>
+                  <li>Реализация обнаружения маркеров с использованием перебора яркости и контраста.</li>
+                  <li>Восстановление функционала подписочного ПО и его расширение.</li>
+                  <li>Реализация сохранения и восстановления разметки для уже размеченных изображений.</li>
+                  <li>Реализация запуска приложения с различными аргументами для разных сценариев работы.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="contribution">
+                <h5>Результат</h5>
+                <ul>
+                  <li>Экономия <b class="metric">360 тыс. ₽/год</b> за счёт отказа от подписки.</li>
+                  <li>Восстановление и расширение функционала ранее существовавшей системы.</li>
+                  <li>Выявлены расхождения между объёмами партнёра и фактическими.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ---------- ПРОЕКТ 6 ---------- -->
+      <article class="project">
+        <div class="project-head">
+          <h4>Веб-приложение для сенсорного терминала</h4>
+        </div>
+        <div class="project-body">
+          <div class="project-media">
+            <img src="images/terminal-app.png" alt="Веб-приложение для сенсорного терминала">
+          </div>
+          <div class="project-side">
+            <div class="tabs" role="tablist">
+              <button class="tab is-active" data-tab="task">Задача</button>
+              <button class="tab" data-tab="limits">Ограничения</button>
+              <button class="tab" data-tab="solution">Решение</button>
+              <button class="tab" data-tab="contribution">Результат</button>
+            </div>
+            <div class="project-content">
+              <div class="tab-panel is-active" data-panel="task">
+                <h5>Задача</h5>
+                <ul>
+                  <li>Реализовать веб-приложение для сенсорного терминала для выдачи расчётных листов.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="limits">
+                <h5>Ограничения</h5>
+                <ul>
+                  <li>Сенсорный интерфейс — крупные элементы, работа без клавиатуры.</li>
+                  <li>Терминал работает 24/7, устойчивость к сбоям.</li>
+                  <li>Возможность печати расчётных листов.</li>
+                  <li>Поддержка сценариев с использованием расписания действий.</li>
+                  <li>Возможность дальнейшего расширения функционала.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="solution">
+                <h5>Решение</h5>
+                <ul>
+                  <li>Разработка веб-приложения на Django с личным кабинетом.</li>
+                  <li>Реализация отдельного приложения для печати расчётных листов напрямую с терминала.</li>
+                  <li>Проектирование UI под сенсорное управление.</li>
+                  <li>Реализация API для загрузки расчётных листов и иных документов из главного офиса.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="contribution">
+                <h5>Результат</h5>
+                <ul>
+                  <li><b class="metric">300+ пользователей</b> в организации-партнёре.</li>
+                  <li>Печать расчётных листов полностью автоматизирована.</li>
+                  <li>Убрана необходимость посещения офиса для ручной выдачи документов.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ ПРЕДПРИНИМАТЕЛЬСКИЙ ОПЫТ ============ -->
+  <section id="entrepreneur" class="section">
+    <h2>Предпринимательский опыт</h2>
+
+    <div class="experience-group">
+      <div class="experience-head">
+        <h3>ООО «Вудвижн» · Основатель, генеральный директор</h3>
+        <p class="experience-dates">Декабрь 2024 — Август 2026</p>
+      </div>
+
+      <article class="project">
+        <div class="project-head">
+          <h4>Система детекции дефектов древесины на базе YOLOv8</h4>
+        </div>
+        <div class="project-body">
+          <div class="project-media">
+            <img src="images/wood-defects.gif" alt="Система детекции дефектов древесины на базе YOLOv8">
+          </div>
+          <div class="project-side">
+            <div class="tabs" role="tablist">
+              <button class="tab is-active" data-tab="task">Задача</button>
+              <button class="tab" data-tab="limits">Ограничения</button>
+              <button class="tab" data-tab="solution">Решение</button>
+              <button class="tab" data-tab="contribution">Результат</button>
+            </div>
+            <div class="project-content">
+              <div class="tab-panel is-active" data-panel="task">
+                <h5>Задача</h5>
+                <ul>
+                  <li>Автоматизировать контроль качества древесины и сортировку пиломатериалов.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="limits">
+                <h5>Ограничения</h5>
+                <ul>
+                  <li>Промышленная камера и сервер на площадке заказчика, без облака.</li>
+                  <li>10 классов дефектов, разный масштаб и освещение.</li>
+                  <li>Ограниченный бюджет — грантовое финансирование.</li>
+                  <li>Нужны настраиваемые правила сортировки под стандарты производства.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="solution">
+                <h5>Решение</h5>
+                <ul>
+                  <li>Обучение YOLOv8m на 10 000 размеченных изображений.</li>
+                  <li>Разделение функционала на отдельные приложения.</li>
+                  <li>Построение пайплайна: камера → сервер детекции → веб-интерфейс оператора.</li>
+                  <li>Реализация настраиваемых JSON-правил сортировки.</li>
+                </ul>
+              </div>
+              <div class="tab-panel" data-panel="contribution">
+                <h5>Результат</h5>
+                <ul>
+                  <li>Спроектировал и разработал систему, довёл до <b class="metric">TRL 5</b>.</li>
+                  <li>Привлёк грант ФСИ «Студенческий стартап» — <b class="metric">1 млн ₽</b>.</li>
+                  <li>Провёл пилот на тестовой площадке, ноябрь 2025.</li>
+                  <li>Получил свидетельство о госрегистрации ПО <b class="metric">№ 2026613483</b>.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ПОДДЕРЖКА ФОНДА ============ -->
+  <section id="grant" class="section">
+    <div class="grant-card">
+      <img src="images/fond.webp" alt="Фонд содействия инновациям" class="grant-logo">
+      <div>
+        <h3>Поддержка проекта</h3>
+        <p>
+          Проект выполнен при поддержке гранта
+          <b>Фонда содействия инновациям</b>, предоставленного в рамках
+          программы «Студенческий стартап» федерального проекта
+          «Платформа университетского технологического предпринимательства».
+        </p>
+        <p class="grant-id">Грант №4303ГССС15-L/101035 от 29 ноября 2024 года.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ НАВЫКИ ============ -->
+  <section id="skills" class="section">
+    <h2>Навыки</h2>
+    <div class="skill-group"><b>Языки:</b> Python</div>
+    <div class="skill-group"><b>Backend:</b> FastAPI, Flask, Django</div>
+    <div class="skill-group"><b>Computer Vision:</b> YOLOv8, OpenCV, PyTorch, Tesseract</div>
+    <div class="skill-group"><b>LLM / RAG:</b> Qdrant, llama.cpp, n8n</div>
+    <div class="skill-group"><b>Аудио / речь:</b> WhisperX, pyannote, FFmpeg</div>
+    <div class="skill-group"><b>Базы данных:</b> PostgreSQL, MySQL, SQLite</div>
+    <div class="skill-group"><b>Инфраструктура:</b> Linux, Docker</div>
+  </section>
+
+  <!-- ============ КОНТАКТЫ ============ -->
+  <section id="contacts" class="section">
+    <h2>Контакты</h2>
+    <div class="contacts-list">
+      <p><i class="fas fa-envelope"></i> <a href="mailto:dewuntain@gmail.com">dewuntain@gmail.com</a></p>
+      <p><i class="fab fa-telegram"></i> <a href="https://t.me/dewuntain" target="_blank" rel="noopener">t.me/dewuntain</a></p>
+      <p><i class="fas fa-phone"></i> <a href="tel:+79601897730">+7 960 189-77-30</a></p>
+    </div>
+  </section>
+
+  <!-- ============ ФУТЕР ============ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span>Дырков Игорь</span>
+      </div>
+      <p class="footer-text">
+        Software Engineer · Computer Vision · ML.<br>
+        Открыт к предложениям.
+      </p>
+      <p class="footer-contacts">
+        <a href="tel:+79601897730">+7 960 189-77-30</a>
+        <span>·</span>
+        <a href="mailto:dewuntain@gmail.com">dewuntain@gmail.com</a>
+        <span>·</span>
+        <a href="https://t.me/dewuntain" target="_blank" rel="noopener">Telegram</a>
+      </p>
+      <p class="footer-copyright">© 2026 Дырков Игорь</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
